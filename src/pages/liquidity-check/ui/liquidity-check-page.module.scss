@@ -1,0 +1,30 @@
+@import '../../../shared/styles/variables.scss';
+
+.content {
+  padding: $spacing-xl;
+}
+
+.modeToggle {
+  display: flex;
+  justify-content: center;
+  gap: $spacing-sm;
+  margin: $spacing-lg 0;
+}
+
+.modeBtn {
+  background: $secondary-color;
+  color: white;
+  border: none;
+  padding: $spacing-sm $spacing-lg;
+  border-radius: $border-radius;
+  cursor: pointer;
+  transition: $transition;
+  
+  &.active {
+    background: $primary-gradient;
+  }
+  
+  &:hover {
+    transform: translateY(-1px);
+  }
+}

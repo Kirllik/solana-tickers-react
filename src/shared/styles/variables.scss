@@ -1,0 +1,29 @@
+// Переменные для всего приложения
+$primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+$secondary-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+$success-gradient: linear-gradient(135deg, #28a745, #20c997);
+$info-gradient: linear-gradient(135deg, #17a2b8, #138496);
+
+$primary-color: #007bff;
+$success-color: #28a745;
+$warning-color: #ffc107;
+$danger-color: #dc3545;
+$info-color: #17a2b8;
+$secondary-color: #6c757d;
+
+$border-radius: 10px;
+$border-radius-lg: 15px;
+$box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+$box-shadow-lg: 0 20px 40px rgba(0,0,0,0.1);
+
+$transition: all 0.3s ease;
+$transition-fast: all 0.2s ease;
+
+$spacing-xs: 5px;
+$spacing-sm: 10px;
+$spacing-md: 15px;
+$spacing-lg: 20px;
+$spacing-xl: 30px;
+
+$font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$font-family-mono: 'Courier New', monospace;

@@ -1,0 +1,18 @@
+@import '../../../shared/styles/variables.scss';
+
+.header {
+  background: $secondary-gradient;
+  color: white;
+  padding: $spacing-xl;
+  text-align: center;
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: $spacing-sm;
+  }
+  
+  p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+  }
+}

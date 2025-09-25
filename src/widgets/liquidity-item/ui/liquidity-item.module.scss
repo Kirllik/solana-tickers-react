@@ -1,0 +1,45 @@
+@import '../../../shared/styles/variables.scss';
+
+.liquidityItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $spacing-sm $spacing-md;
+  border-bottom: 1px solid #eee;
+  transition: background $transition-fast;
+  
+  &:hover {
+    background: #f8f9fa;
+  }
+  
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.liquiditySymbol {
+  font-weight: bold;
+  color: $primary-color;
+  min-width: 80px;
+}
+
+.liquidityValue {
+  font-family: $font-family-mono;
+  font-weight: bold;
+  
+  &.high {
+    color: $success-color;
+  }
+  
+  &.medium {
+    color: $warning-color;
+  }
+  
+  &.low {
+    color: $danger-color;
+  }
+  
+  &.none {
+    color: $secondary-color;
+  }
+}

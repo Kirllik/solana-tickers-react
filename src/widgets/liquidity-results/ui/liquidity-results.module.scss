@@ -1,0 +1,53 @@
+@import '../../../shared/styles/variables.scss';
+
+.liquidityResults {
+  background: white;
+  border-radius: $border-radius-lg;
+  padding: $spacing-lg;
+  margin: $spacing-lg 0;
+  box-shadow: $box-shadow;
+}
+
+.sortControls {
+  display: flex;
+  align-items: center;
+  gap: $spacing-sm;
+  
+  select {
+    padding: $spacing-xs $spacing-sm;
+    border: 1px solid #dee2e6;
+    border-radius: $spacing-xs;
+    background: white;
+    font-size: 0.9rem;
+    cursor: pointer;
+    
+    &:focus {
+      outline: none;
+      border-color: $primary-color;
+    }
+  }
+}
+
+.progressBar {
+  margin-bottom: $spacing-lg;
+  
+  .progressTrack {
+    width: 100%;
+    height: 8px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    overflow: hidden;
+    
+    .progressFill {
+      height: 100%;
+      background-color: $primary-color;
+      transition: width 0.3s ease;
+    }
+  }
+}
+
+.progressInfo {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: $spacing-xs;
+}

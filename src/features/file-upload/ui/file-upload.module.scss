@@ -1,0 +1,55 @@
+@import '../../../shared/styles/variables.scss';
+
+.fileUploadSection {
+  background: #f8f9fa;
+  border: 2px dashed #dee2e6;
+  border-radius: $border-radius-lg;
+  padding: $spacing-lg;
+  margin: $spacing-lg 0;
+  text-align: center;
+  transition: $transition;
+  
+  &:hover {
+    border-color: $primary-color;
+    background: #e3f2fd;
+  }
+  
+  &.dragover {
+    border-color: $success-color;
+    background: #d4edda;
+  }
+}
+
+.fileInput {
+  display: none;
+}
+
+.fileUploadBtn {
+  background: $info-gradient;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: $border-radius;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: $transition;
+  margin: $spacing-sm;
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+}
+
+.fileInfo {
+  background: white;
+  border: 1px solid #dee2e6;
+  border-radius: $border-radius;
+  padding: $spacing-md;
+  margin: $spacing-sm 0;
+  display: none;
+  
+  &.show {
+    display: block;
+  }
+}

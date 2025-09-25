@@ -1,0 +1,85 @@
+@import '../../../shared/styles/variables.scss';
+
+.networkGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: $spacing-sm;
+  max-height: 300px;
+  overflow-y: auto;
+  border: 2px solid #e9ecef;
+  border-radius: $border-radius;
+  padding: $spacing-md;
+  background: #f8f9fa;
+  margin: $spacing-sm auto;
+  max-width: 800px;
+}
+
+.networkItem {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  background: white;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  transition: $transition-fast;
+  cursor: pointer;
+  
+  &:hover {
+    background: #e3f2fd;
+    border-color: $primary-color;
+    transform: translateY(-1px);
+  }
+  
+  &.selected {
+    background: $primary-gradient;
+    color: white;
+    border-color: $primary-color;
+  }
+}
+
+.networkCheckbox {
+  margin-right: $spacing-sm;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.networkLabel {
+  flex: 1;
+  font-size: 0.9rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.networkControls {
+  margin: $spacing-md 0;
+  display: flex;
+  justify-content: center;
+  gap: $spacing-sm;
+  flex-wrap: wrap;
+}
+
+.networkBtn {
+  background: $secondary-color;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: $transition-fast;
+  
+  &:hover {
+    background: #545b62;
+    transform: translateY(-1px);
+  }
+}
+
+.selectedCount {
+  background: $success-gradient;
+  color: white;
+  padding: 8px $spacing-md;
+  border-radius: 20px;
+  font-weight: bold;
+  margin: $spacing-sm 0;
+  text-align: center;
+}
