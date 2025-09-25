@@ -8,46 +8,39 @@
   box-shadow: $box-shadow;
 }
 
+.progressInfo {
+  font-size: 0.9rem;
+  color: $secondary-color;
+  margin-top: $spacing-sm;
+}
+
+.progressBar {
+  margin: $spacing-md 0;
+}
+
+.progressTrack {
+  width: 100%;
+  height: 8px;
+  background: #e9ecef;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background: $primary-gradient;
+  transition: width 0.3s ease;
+}
+
 .sortControls {
   display: flex;
   align-items: center;
-  gap: $spacing-sm;
   
   select {
     padding: $spacing-xs $spacing-sm;
     border: 1px solid #dee2e6;
-    border-radius: $spacing-xs;
+    border-radius: $border-radius;
     background: white;
     font-size: 0.9rem;
-    cursor: pointer;
-    
-    &:focus {
-      outline: none;
-      border-color: $primary-color;
-    }
   }
-}
-
-.progressBar {
-  margin-bottom: $spacing-lg;
-  
-  .progressTrack {
-    width: 100%;
-    height: 8px;
-    background-color: #f0f0f0;
-    border-radius: 4px;
-    overflow: hidden;
-    
-    .progressFill {
-      height: 100%;
-      background-color: $primary-color;
-      transition: width 0.3s ease;
-    }
-  }
-}
-
-.progressInfo {
-  font-size: 0.9rem;
-  color: #666;
-  margin-top: $spacing-xs;
 }

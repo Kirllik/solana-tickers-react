@@ -6,7 +6,7 @@
   align-items: center;
   padding: $spacing-sm $spacing-md;
   border-bottom: 1px solid #eee;
-  transition: background $transition-fast;
+  transition: $transition-fast;
   
   &:hover {
     background: #f8f9fa;
@@ -19,13 +19,13 @@
 
 .liquiditySymbol {
   font-weight: bold;
-  color: $primary-color;
-  min-width: 80px;
+  font-size: 1.1rem;
+  color: #333;
 }
 
 .liquidityValue {
-  font-family: $font-family-mono;
-  font-weight: bold;
+  font-size: 1rem;
+  font-weight: 600;
   
   &.high {
     color: $success-color;
