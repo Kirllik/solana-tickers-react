@@ -1,6 +1,6 @@
 import React from 'react';
 import { LiquidityCheckPage } from '../../pages';
-import styles from './app.module.scss'; //
+import styles from './app.module.scss'; //сс
 
 export const App = () => {
   return (
